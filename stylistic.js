@@ -55,4 +55,14 @@ module.exports = {
     // variables
     'init-declarations': 'off',
   },
+  overrides: [
+    {
+      files: ['**/*.ts?(x)'],
+      extends: 'prettier/@typescript-eslint',
+      rules: {
+        'no-array-constructor': 'off',
+        '@typescript-eslint/no-array-constructor': 'error',
+      },
+    },
+  ],
 }
